@@ -1,0 +1,38 @@
+/**
+ * Created by ram on 6/12/17.
+ */
+class Student {
+    int rollno;
+    String name;
+    void insertRecord(int r, String n){
+        rollno = r;
+        name=n;
+    }
+    void displayInformation(){
+        System.out.println(rollno+" "+name);
+    }
+}
+
+class TestStudent1 {
+    public static void main(String[] args) {
+        //creating multiple objects
+        Student s1 = new Student();
+        Student s2 = new Student();
+        //initializing objects
+        //initializing objects simply means storing data into the objects!
+        /*s1.id=100;
+        s1.name="rama";
+        s2.id=200;
+        s2.name="krishna";
+        System.out.println(s1.id);
+        System.out.println(s1.name);
+        System.out.println(s2.id+" "+s2.name);*/
+
+        //initializing objects with methods
+        
+        s1.insertRecord(001, "rama");
+        s2.insertRecord(002, "krishna");
+        System.out.println(s1.name+" "+s1.rollno);
+        s2.displayInformation();
+    }
+}
